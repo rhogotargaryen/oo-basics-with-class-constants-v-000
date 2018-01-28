@@ -8,6 +8,7 @@ class Shoe
     if BRANDS.detect(brand) == nil
       BRANDS << brand
     end
+    @brand = brand
   end
 
   def cobble
