@@ -5,11 +5,10 @@ class Shoe
   BRANDS = []
 
   def initialize(brand)
-    @brand = brand
-    if BRANDS.detect?(@brand) == true
-      BRANDS << @brand
+    if BRANDS.detect(brand) == nil
+      BRANDS << brand
     end
-  end
+
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
