@@ -6,7 +6,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    if !BRANDS.detect(brand)
+      BRANDS << brand
+    end
   end
   def cobble
     self.condition = "new"
