@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if BRANDS.detect?(@brand) == false BRANDS << @brand
+    if BRANDS.detect?(@brand) == false : BRANDS << @brand
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
