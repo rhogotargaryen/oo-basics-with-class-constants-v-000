@@ -5,9 +5,6 @@ class Shoe
   BRANDS = []
 
   def initialize(brand)
-    if BRANDS.detect(brand) == nil
-      BRANDS << brand
-    end
     @brand = brand
   end
 
